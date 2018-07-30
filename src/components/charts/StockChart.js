@@ -22,7 +22,7 @@ export default class StockChart extends React.Component {
                     <div className="chart">
                         <FlexibleWidthXYPlot
                             animation
-                            xDomain={[startTimestamp, endTimestamp]}
+                            xDomain={[startTimestamp - 10000, endTimestamp]}
                             yDomain={[0, 25]}
                             xType="time"
                             height={250}>
